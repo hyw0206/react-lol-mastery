@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR&display=swap');
+/* 기본 전역 설정 */
+
+.title {
+  text-align: center;
+}
+.App {
+  background-color: rgb(32, 33, 36);
+}
+* {
+  box-sizing: border-box;
+  color: #e8eaed;
+  font-family: 'Nanum Gothic', sans-serif;  
+}
+.loading {
+  margin: 40px;
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+}
+.sidebar {
+  padding: 4px;
+  border: 2px solid black;
+  background-color: rgb(23, 23, 23);
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  opacity: 0.4;
+}
+/* 닉네임 보내는 영역 설정 */
+.send-nickname {
+  padding-top: 20px;
+  text-align: center;
+}
+.send-nickname input {
+  width: 500px;
+  height: 32px;
+  padding: 4px;
+  border: 1px solid #5f6368;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgb(32, 33, 36);
+  outline: none;
+}
+
+.send-nickname input::placeholder {
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.send-nickname button {
+  height: 48px;
+  margin-left: 10px;
+  border: 0;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #9aa0a6;
+  background-color: rgb(48, 49, 52);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* 소환사 기본 정보 출력 부분 */
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.summoner-info {
+  width: 400px;
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.summoner-info div {
+  margin: 8px; 
+}
+ 
+.summoner-info {
+  padding: 16px;
+  border: 2px solid black;
+  background-color: rgb(48, 49, 52);
+}
+/* 숙련도 영역 display */
+
+.mastery-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 16px;
+}
+/* 숙련도 영역 */
+.summoner-mastery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(48, 49, 52);
+}
+.summoner-mastery div div {
+  border-right: 1px solid black;
+}
+.most {
+  border-left: 2px solid black;
+}
+.most, .level {
+  width: 100px;
+}
+.champion {
+  width: 200px;
+}
+.suko {
+  width: 250px;
+  border-right: 2px solid black !important;
+}
+.mastery-head {
+  display: flex;
+  flex-direction: row;
+}
+.mastery-head div {
+  padding: 8px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.summoner-mastery-info {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+}
+.summoner-mastery-info div {
+  padding: 8px;
+}
+.summoner-mastery > div:last-child {
+  border-bottom: 2px solid black;
+}
+.search-mastery {
+  text-align: center;
+}
+.search-mastery input {
+  width: 200px;
+  height: 32px;
+  padding: 4px;
+  border: 1px solid #5f6368;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgb(32, 33, 36);
+  outline: none;
+}
+
+.search-mastery input::placeholder {
+  padding: 6px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
